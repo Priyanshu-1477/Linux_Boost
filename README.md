@@ -34,6 +34,25 @@ linuxboost
 ```
 
 ---
+## how to run
+
+<details> <summary>🧪 For testers and early users</summary>
+bash
+Copy
+Edit
+# Clone the project
+git clone https://github.com/Priyanshu-1477/Linux_Boost.git
+
+# Move into the directory
+cd Linux_Boost
+
+# (Optional) Install requirements
+pip install PyQt5
+
+# Run the app
+python3 main.py
+</details>
+
 
 ## 💻 Developer Setup
 
