@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt
 import json
 from collections import defaultdict
+import os
 
 class CollapsibleSection(QWidget):
     def __init__(self, title, widgets):
@@ -109,8 +110,11 @@ class MainWindow(QWidget):
         self.apps_content = QWidget()
         self.apps_layout = QVBoxLayout()
 
-        with open("apps.json", "r") as f:
+        # For apps.json
+        apps_path = os.path.join(os.path.dirname(__file__), "apps.json")
+        with open(apps_path, "r") as f:
             self.apps_data = json.load(f)
+
 
         self.apps_by_category = defaultdict(list)
 
@@ -172,8 +176,11 @@ class MainWindow(QWidget):
         self.commands_content = QWidget()
         self.commands_layout = QVBoxLayout()
 
-        with open("commands.json", "r") as f:
+        # For commands.json
+        commands_path = os.path.join(os.path.dirname(__file__), "commands.json")
+        with open(commands_path, "r") as f:
             self.commands_data = json.load(f)
+
 
         self.commands_by_category = defaultdict(list)
 
