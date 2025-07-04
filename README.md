@@ -50,7 +50,7 @@ pip install PyQt5
 
 # Run the app
 python3 main.py
-```
+
 </details>
 
 
