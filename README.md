@@ -36,10 +36,9 @@ linuxboost
 ---
 ## how to run
 
-<details> <summary>🧪 For testers and early users</summary>
-bash
-Copy
-Edit
+<details> 
+  <summary>🧪 For testers and early users</summary>
+```bash
 # Clone the project
 git clone https://github.com/Priyanshu-1477/Linux_Boost.git
 
@@ -51,6 +50,7 @@ pip install PyQt5
 
 # Run the app
 python3 main.py
+```
 </details>
 
 
