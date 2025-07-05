@@ -1,4 +1,5 @@
 # main.py
+
 import sys
 from PyQt5.QtWidgets import QApplication
 from linuxboost.ui_main import MainWindow

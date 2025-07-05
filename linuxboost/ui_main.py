@@ -112,6 +112,8 @@ class MainWindow(QWidget):
 
         # For apps.json
         apps_path = os.path.join(os.path.dirname(__file__), "apps.json")
+        print("Looking for apps.json at:", apps_path)
+
         with open(apps_path, "r") as f:
             self.apps_data = json.load(f)
 
