@@ -35,8 +35,9 @@ linuxboost
 
 ---
 
-## How to run(early users)
+## 💻 Developer Setup
 
+To run it locally:
 
 ```bash
 # Clone the project
@@ -49,19 +50,6 @@ cd Linux_Boost
 pip install PyQt5
 
 # Run the app
-python3 main.py
-```
-
-
-
-## 💻 Developer Setup
-
-To run it locally:
-
-```bash
-git clone https://github.com/yourusername/linuxboost.git
-cd linuxboost
-pip install -e .
 python3 main.py
 ```
 
