@@ -242,11 +242,11 @@ class MainWindow(QWidget):
             section.setVisibleContent(any_visible)
 
     def install_selected_apps(self):
-        from installer import install_commands
+        from .installer import install_commands
         commands = [cmd for cb, cmd, _, _, _ in self.checkboxes_apps if cb.isChecked()]
         install_commands(commands)
 
     def install_selected_commands(self):
-        from installer import install_commands
+        from .installer import install_commands
         commands = [cmd for cb, cmd, _, _, _ in self.checkboxes_commands if cb.isChecked()]
         install_commands(commands)
